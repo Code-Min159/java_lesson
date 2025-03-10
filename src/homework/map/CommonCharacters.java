@@ -9,9 +9,9 @@ public class CommonCharacters {
 
         //map 特性 有重複
         //set 特性 沒有重複
-        SET<String> str = new MAP<>();
-        for(String str: str){
-            str.add(str);
+        Map<String, Boolean> map = new HashMap<>();
+        for(String s: array){
+            map.put(s,true);
         }
         // 預期結果 {a=1, b=1, c=2}
         System.out.println("");
